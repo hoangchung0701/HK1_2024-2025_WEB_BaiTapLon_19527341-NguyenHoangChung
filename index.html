@@ -1,0 +1,736 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Trang chủ</title>
+    <meta http-equiv="content-language" content="vi" />
+    <link href="images/vnnic-logo.svg" rel="shortcut icon" type="image/x-icon" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/font-icon.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/clicktop.js"></script>
+    <script src="js/formmodal.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="col-sm-4">
+                <a href="index.html" class="text-center"><img src="images/vnnic-logo.svg" class="pull-left logo"></a>
+            </div>
+            <div class="col-sm-5">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Tìm kiếm</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 cart-hder pull-right hidden-xs">
+                <div class="row" style="position:relative;">
+                    <div class="col-xs-3" style="width:auto; padding:0;">
+                        <a href="giohang.html">
+                            <i class="glyphicon glyphicon-shopping-cart"></i>
+                        </a>
+                    </div>
+                    <div class="col-xs-9" style="padding-left:8px; width:auto;">
+                        <p><strong><a href="giohang.html">Giỏ hàng</a></strong></p>
+                        <p class="into-price"><strong>40.000.000₫</strong> (2)</p>
+                        <ul>
+                            <a href=""><span class="triangle-down"></span></a>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-4 nopadd">
+                                        <img src="images/p_san_pham/sp1.webp" class="img-responsive">
+                                    </div>
+                                    <div class="col-sm-8" style="padding-right:0;">
+                                        <h5><a href="detail.html">Laptop Lenovo</a></h5>
+                                        <p> 01 X 20.000.000 ₫</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-4 nopadd">
+                                        <img src="images/p_san_pham/sp1.webp" class="img-responsive">
+                                    </div>
+                                    <div class="col-sm-8" style="padding-right:0;">
+                                        <h5><a href="detail.html">Laptop Dell</a></h5>
+                                        <p> 01 X 20.000.000 ₫</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <p class="total-price">Thành tiền: <span>40.000.000 ₫</span></p>
+                            <button class="btn btn-success center-block">Thanh toán</button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-default">
+        <div class="box-nav">
+            <div class="container">
+                <!-- Menu co dan theo trang web -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand visible-xs" href="#"></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Sản phẩm <span class="caret"></span></a>
+                            <a href="danhsachsanpham.html" class="hidden-xs mask">&nbsp;</a>
+                            <ul class="dropdown-menu">                             
+                                <li><a href="danhsachsanpham.html">Laptop</a></li>
+                                <li><a href="danhsachsanpham.html">MacBook</a></li>
+                                <li><a href="danhsachsanpham.html">PC</a></li>
+                                <li><a href="danhsachsanpham.html">Tai nghe</a></li>
+                                <li><a href="danhsachsanpham.html">Ram máy tính</a></li>
+                                <li><a href="danhsachsanpham.html">Xem thêm...</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="tintuc.html">Tin tức</a></li>
+
+                        <li><a href="about.html">Giới thiệu</a></li>
+                    </ul>
+                    <ul class="navbar-right navbar-nav nav">
+                        <li><a class="navbar-link text-muted" data-toggle="modal" data-target="#myModal">Đăng nhập</a>
+                        </li>
+                        <li><a class="navbar-link text-muted" data-toggle="modal" data-target="#myModaldk">Đăng ký</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container -->
+        </div>
+    </nav>
+    <!-- form đăng nhập -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog" style="width: 600x;">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h2 class="modal-title text-danger">Đăng nhập</h2>
+                    <button type="button" class="close" data-dismiss="modal" style="margin-top: -30px;">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form class="horizontal-form" id="formDN" action="">
+                        <div class="form-group">
+                            <label for="tdn" class="label-control">Tên đăng nhập</label>
+                            <input type="text" class="form-control" id="txtDN" value="" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd" class="label-control">Mật khẩu</label>
+                            <input type="password" class="form-control" id="txtpwd" value="" required>
+                        </div>
+                        <button type="submit" class="btn btn-success col-sm-2">Đăng nhập</button>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------ -->
+    <div class="modal" id="myModaldk">
+        <div class="modal-dialog" style="width: 600x;">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h2 class="modal-title text-danger">Đăng ký</h2>
+                    <button type="button" class="close" data-dismiss="modal" style="margin-top: -30px;">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form id="formdk" class="horizontal-form">
+                        <div class="form-group">
+                            <label class="label-control" for="ten">Tên đăng nhập</label>
+                            <input type="text" class="form-control" id="txtten" onblur="CheckUsername()"
+                                placeholder="nhập vào tên đăng nhập">
+                            <span id="er1" class="text-danger font-italic">(*)</span>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-control" for="pwd">Mật khẩu</label>
+                            <input type="password" class="form-control" id="txtpwdk" onblur="CheckPasswd()"
+                                placeholder="Nhập vào mật khẩu">
+                            <span id="er2" class="text-danger font-italic">(*)</span>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-control" for="checkpw">Xác nhận mật khẩu</label>
+                            <input type="password" class="form-control" id="checkpw" onblur="CheckPasswdRepeat()"
+                                placeholder="Nhập lại mật khẩu">
+                            <span id="er4" class="text-danger font-italic">(*)</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="label-control">Email</label>
+                            <input type="email" class="form-control" id="txtemail" onblur="CheckEmail()"
+                                placeholder="VD: abc@gmail.com">
+                            <span id="er3" class="text-danger font-italic">(*)</span>
+                        </div>
+
+                        <div class="form-group">
+                            <div id="thongbao" class="text-danger"></div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary col-md-12" onclick="Register()">Đăng ký</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- -------------- -->
+
+    <section class="container">
+        <aside class="col-sm-3 nopadd">
+            <section class="category-w">
+                <div class="category-group">
+                    <h2><i class="fa fa-bars"></i> DANH MỤC SẢN PHẨM</h2>
+                    <ul class="list-group">
+                        
+                        <li><a href="danhsachsanpham.html" class="list-group-item">Laptop văn phòng</a>
+                            <ul class="lv2">
+                                <li><a href="danhsachsanpham.html">Laptop</a></li>
+                                <li><a href="danhsachsanpham.html">MacBook</a></li>
+                                <li><a href="danhsachsanpham.html">ThinkPad</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="danhsachsanpham.html" class="list-group-item">Laptop Gaming</a>
+                            <ul class="lv2">
+                                <li><a href="danhsachsanpham.html">PC</a></li>
+                                <li><a href="danhsachsanpham.html">Tai nghe</a></li>
+                                <li><a href="danhsachsanpham.html">Ram máy tính</a></li>
+                            </ul>
+                        </li>              
+                        <li><a href="danhsachsanpham.html" class="list-group-item">Xem thêm...</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="row pro-slide">
+                <div class="title-proin">
+                    <h2><span>Sản phẩm khuyến mãi</span></h2>
+                    <span class="customNavigation pull-right">
+                        <a class="btn btn-prev prevs"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                        <a class="btn btn-next nexts"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </span>
+                </div>
+                <div id="owl-proslide" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+                    <div class="owl-wrapper-outer">
+                        <div class="owl-wrapper"
+                            style="width: 712px; left: 0px; display: block; transition: all 0ms ease 0s; transform: translate3d(0px, 0px, 0px);">
+                            <div class="owl-item" style="width: 300px;">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <a href="detail.html"><img src="images/p_san_pham/sp1.webp"
+                                                    class="img-responsive"></a>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <a href="detail.html">
+                                                <h3>Laptop Dell</h3>
+                                            </a>
+                                            <div class="price-in">17.890.000 VNĐ</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <a href="detail.html"><img src="images/p_san_pham/sp1.webp"
+                                                    img-responsive"></a>
+                                        </div>
+                                        <div class="col-xs-8">
+
+                                            <a href="detail.html">
+                                                <h3>Laptop ASUS</h3>
+                                            </a>
+                                            <div class="price-in">18.290.000 VNĐ</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <a href="detail.html"><img src="images/p_san_pham/sp1.webp"
+                                                    class="img-responsive"></a>
+                                        </div>
+                                        <div class="col-xs-8">
+
+                                            <a href="detail.html">
+                                                <h3>Laptop ThinkPad</h3>
+                                            </a>
+                                            <div class="price-in">20.990.000 VNĐ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            </section>
+
+            <section class="row new-slide">
+                <div class="title-proin">
+                    <h2><span>Tin tức - Bài viết</span></h2>
+                    <span class="customNavigation pull-right">
+                        <a class="btn btn-prev prev-new"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                        <a class="btn btn-next next-new"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </span>
+                </div>
+
+                <div id="owl-news" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+                    <div class="owl-wrapper-outer">
+                        <div class="owl-wrapper"
+                            style="width: 712px; left: 0px; display: block; transition: all 0ms ease 0s; transform: translate3d(0px, 0px, 0px);">
+                            <div class="owl-item" style="width: 300px;">
+                                <div class="item">
+                                    <a href="about.html"><img src="images/p_noi_dung/nd1.png"></a>
+                                    <a href="about.html">
+                                        <h3>Khẳng định thương hiệu Việt</h3>
+                                        <p>Hệ thống bán lẻ Laptop,PC điện máy chất lượng trải dài khắp Việt Nam...</p>
+                                    </a>
+                                </div>
+                            </div>
+            </section>
+
+        </aside>
+        <article class="col-sm-9">
+            <section class="row group-proin">
+                <div class="title-proin">
+                    <h2><span>Sản phẩm bán chạy</span></h2>
+                    <span class="customNavigation pull-right">
+                        <a class="btn prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                        <a class="btn next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </span>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop Dell</h3>
+                            </a>
+                            <div class="price-pro">19.000.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop ASUS</h3>
+                            </a>
+                            <div class="price-pro">19.900.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop ThinkBook</h3>
+                            </a>
+                            <div class="price-pro">16.900.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop MacBook</h3>
+                            </a>
+                            <div class="price-pro">19.750.000 VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <section class="row group-proin">
+                <div class="title-proin">
+                    <h2><span>Sản phẩm mới</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop ThinkPad</h3>
+                            </a>
+                            <div class="price-pro">19.490.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop ASUS ZenBook</h3>
+                            </a>
+                            <div class="price-pro">19.760.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop Dell</h3>
+                            </a>
+                            <div class="price-pro">19.770.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop MacBook</h3>
+                            </a>
+                            <div class="price-pro">19.440.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop Acer Nitro 3</h3>
+                            </a>
+                            <div class="price-pro">19.730.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop ThinkBook</h3>
+                            </a>
+                            <div class="price-pro">19.870.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop Asus</h3>
+                            </a>
+                            <div class="price-pro">15.999.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop ASUS Rog</h3>
+                            </a>
+                            <div class="price-pro">20.000.000 VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <section class="row group-proin">
+                <div class="title-proin">
+                    <h2><span>Laptop chính hãng </span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop Dell</h3>
+                            </a>
+                            <div class="price-pro">20.000.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop Acer</h3>
+                            </a>
+                            <div class="price-pro">20.000.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop ThinkBook</h3>
+                            </a>
+                            <div class="price-pro">16.490.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop ZenBook</h3>
+                            </a>
+                            <div class="price-pro">16.900.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop ASUS </h3>
+                            </a>
+                            <div class="price-pro">19.980.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop ThinkPad</h3>
+                            </a>
+                            <div class="price-pro">17.560.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop MacBook</h3>
+                            </a>
+                            <div class="price-pro">19.680.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="box-pro">
+                            <div class="img-pro">
+                                <a href="detail.html"><img src="images/p_san_pham/sp1.webp"></a>
+                                <div class="btn-pro">
+                                    <button class="btn btn-default"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                    <a href="dathang.html" class="btn btn-default"><i class="fa fa-edit"></i> Mua
+                                        ngay</a>
+                                </div>
+                            </div>
+                            <a href="detail.html">
+                                <h3>Laptop asus Rog 3</h3>
+                            </a>
+                            <div class="price-pro">20.000.000 VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+    </section>
+
+    <!-- fot-div -->
+    <section class="fot-div">
+        <div class="container">
+            <div class="col-sm-4 nopadd">
+                <div class="kg"><img src="images/vnnic-logo.svg" class="img-logo" alt="..."> </div>
+                <p>Nhập Email để nhận được những thông tin mới nhất</p>
+                <div class="input-group col-sm-9">
+                    <input type="text" class="form-control" placeholder="Nhập email...">
+                    <span class="input-group-btn nopadd">
+                        <button class="btn btn-default" type="button">Gửi</button>
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h3>Liên hệ</h3>
+                <p>Trang bán hàng chất lượng uy tín</p>
+                <p><i class="fa fa-map-marker"></i> 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, TP. Hồ Chí Minh</p>
+                <p><i class="fa fa-envelope-o"></i> hoangchung@gmail.com</p>
+                <p><i class="fa fa-phone"></i> 1234.567.789</p>
+            </div>
+            <div class="col-sm-2">
+                <h3>Giới thiệu</h3>
+                <ul>
+                    <li><a href="index.html">Laptop</a></li>
+                    <li><a href="index.html">MacBook</a></li>
+                    <li><a href="index.html">PC</a></li>
+                    <li><a href="index.html">Tai nghe</a></li>
+                    <li><a href="index.html">Ram máy tính</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h3>Hướng dẫn</h3>
+                <ul>
+
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="col-sm-6 text-left">
+                © 19527341 - Nguyễn Hoàng Chung
+            </div>
+            <div class="col-sm-6 text-right">
+                12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, TP. Hồ Chí Minh
+            </div>
+        </div>
+    </footer>
+
+    <span class="back-top" id="back-top" title="Lên đầu trang">
+        <i class="fa fa-angle-double-up"></i>
+    </span>
+</body>
+
+</html>
